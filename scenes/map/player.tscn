@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://cvcsymelrtv8d"]
+
+[ext_resource type="Texture2D" uid="uid://voiar8qiu6gv" path="res://sprites/pointer.png" id="1_foxsi"]
+
+[node name="Player" type="CharacterBody2D"]
+position = Vector2(726, 362)
+
+[node name="Pointer" type="Sprite2D" parent="."]
+position = Vector2(-18, -1)
+texture = ExtResource("1_foxsi")
