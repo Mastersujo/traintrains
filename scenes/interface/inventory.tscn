@@ -1,0 +1,23 @@
+[gd_scene load_steps=2 format=3 uid="uid://bkn6wi713bqe2"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_3k4yo"]
+size = Vector2(24, 24)
+
+[node name="inventory" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -120.0
+offset_bottom = -30.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="placeholder" type="ItemList" parent="."]
+layout_mode = 0
+offset_right = 360.0
+offset_bottom = 240.0
+item_count = 2
+item_0/text = "first item"
+item_0/icon = SubResource("PlaceholderTexture2D_3k4yo")
+item_1/text = "second item"

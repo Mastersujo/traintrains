@@ -1,0 +1,25 @@
+[gd_scene load_steps=2 format=3 uid="uid://8m0cv5gae044"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_x63ay"]
+size = Vector2(360, 240)
+
+[node name="event_screen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(0.467188, 0.164582, 0.285157, 1)
+position = Vector2(176, 124)
+texture = SubResource("PlaceholderTexture2D_x63ay")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 116.0
+offset_top = 94.0
+offset_right = 229.0
+offset_bottom = 117.0
+text = "PLACEHOLDER"
