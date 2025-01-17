@@ -1,11 +1,10 @@
 extends Control
 
 
-@export var name_of_place : String 
-@export var distance : float
-@export var connections : Array
-@export var numiration : int
-@export var modulate_me : Color
+@export var name_of_place : String #name of the place displayed on the map
+@export var connections : Array #array of places that can be traveled to 
+@export var numiration : int #index of the place used in connections
+@export var modulate_me : Color #just the color of the node
 
 
 signal player_asked_to_move
