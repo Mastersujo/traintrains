@@ -1,0 +1,49 @@
+[gd_scene load_steps=4 format=3 uid="uid://cvwvvb76wl5vk"]
+
+[ext_resource type="Texture2D" uid="uid://30gikbxtxcwv" path="res://assets/interface/right_screen.png" id="1_4388g"]
+[ext_resource type="PackedScene" uid="uid://dwqs4eryby3s2" path="res://scenes/interface/inventory.tscn" id="2_3le7k"]
+[ext_resource type="LabelSettings" uid="uid://bsc387j6eg11k" path="res://resources/basic_text.tres" id="3_kqubi"]
+
+[node name="right screen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="art" type="Sprite2D" parent="."]
+texture = ExtResource("1_4388g")
+
+[node name="inventory" parent="." instance=ExtResource("2_3le7k")]
+layout_mode = 1
+offset_left = -16.0
+offset_top = -59.0
+offset_right = -607.0
+offset_bottom = -374.0
+columns = 3
+lines = 3
+
+[node name="item name" type="Label" parent="."]
+layout_mode = 0
+offset_left = -21.0
+offset_top = -67.0
+offset_right = 97.0
+offset_bottom = -44.0
+scale = Vector2(0.5, 0.5)
+text = "name: Coal"
+label_settings = ExtResource("3_kqubi")
+horizontal_alignment = 1
+
+[node name="description" type="Label" parent="."]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 6.0
+offset_right = 68.0
+offset_bottom = 122.0
+scale = Vector2(0.5, 0.5)
+text = "cheap and reliable fuel source."
+label_settings = ExtResource("3_kqubi")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2

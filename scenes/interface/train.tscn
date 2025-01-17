@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://b2avtkuair5ft"]
+
+[ext_resource type="PackedScene" uid="uid://dfv70rmk7bsgi" path="res://scenes/interface/wagon.tscn" id="1_unww3"]
+
+[node name="Train" type="Node2D"]
+
+[node name="wagons" type="HBoxContainer" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+theme_override_constants/separation = 218
+
+[node name="wagon" parent="wagons" instance=ExtResource("1_unww3")]
+layout_mode = 2
+
+[node name="wagon2" parent="wagons" instance=ExtResource("1_unww3")]
+layout_mode = 2

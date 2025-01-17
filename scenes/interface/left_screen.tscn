@@ -1,0 +1,40 @@
+[gd_scene load_steps=4 format=3 uid="uid://blxg5buvixy7t"]
+
+[ext_resource type="Texture2D" uid="uid://csd8g4yt7sf1l" path="res://assets/interface/left_screen.png" id="1_4nc6b"]
+[ext_resource type="LabelSettings" uid="uid://bsc387j6eg11k" path="res://resources/basic_text.tres" id="3_085pq"]
+[ext_resource type="PackedScene" uid="uid://dwqs4eryby3s2" path="res://scenes/interface/inventory.tscn" id="3_yw4nx"]
+
+[node name="left screen" type="Control"]
+texture_filter = 1
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -576.0
+offset_bottom = -198.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="screen" type="Sprite2D" parent="."]
+texture = ExtResource("1_4nc6b")
+centered = false
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 12.0
+offset_right = 97.0
+offset_bottom = 29.0
+scale = Vector2(0.5, 0.5)
+text = "item queue"
+label_settings = ExtResource("3_085pq")
+horizontal_alignment = 1
+
+[node name="inventory" parent="." instance=ExtResource("3_yw4nx")]
+layout_mode = 1
+offset_left = 2.0
+offset_top = 20.0
+offset_right = -9.0
+offset_bottom = -18.0
+columns = 3
+lines = 8

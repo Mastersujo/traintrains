@@ -1,23 +1,19 @@
-[gd_scene load_steps=2 format=3 uid="uid://bkn6wi713bqe2"]
+[gd_scene load_steps=3 format=3 uid="uid://dwqs4eryby3s2"]
 
-[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_3k4yo"]
-size = Vector2(24, 24)
+[ext_resource type="Script" path="res://script/inventory.gd" id="1_2wdkx"]
+[ext_resource type="Theme" uid="uid://bbnn2xc48q5cd" path="res://resources/inventory_visualizer.tres" id="2_vc1he"]
 
 [node name="inventory" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_right = -120.0
-offset_bottom = -30.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_2wdkx")
 
-[node name="placeholder" type="ItemList" parent="."]
-layout_mode = 0
-offset_right = 360.0
-offset_bottom = 240.0
-item_count = 2
-item_0/text = "first item"
-item_0/icon = SubResource("PlaceholderTexture2D_3k4yo")
-item_1/text = "second item"
+[node name="item_queue" type="GridContainer" parent="."]
+theme = ExtResource("2_vc1he")
+theme_override_constants/h_separation = 0
+theme_override_constants/v_separation = 0
+columns = 3

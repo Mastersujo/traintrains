@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="trains"
-run/main_scene="res://scenes/game_main.tscn"
+run/main_scene="res://scenes/interface/main_interface.tscn"
 config/features=PackedStringArray("4.3", "GL Compatibility")
 config/icon="res://icon.svg"
 

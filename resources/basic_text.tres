@@ -1,0 +1,8 @@
+[gd_resource type="LabelSettings" load_steps=2 format=3 uid="uid://bsc387j6eg11k"]
+
+[ext_resource type="FontFile" uid="uid://c6nnyt1a76vpt" path="res://assets/fonts/DeterminationSansWebRegular-369X.ttf" id="1_lnhiv"]
+
+[resource]
+line_spacing = -7.0
+font = ExtResource("1_lnhiv")
+font_color = Color(0.0117647, 0.984314, 0.137255, 1)

@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://dfv70rmk7bsgi"]
+
+[ext_resource type="Texture2D" uid="uid://d4drvwb0ggkkm" path="res://assets/basic_wagon.png" id="1_yglft"]
+[ext_resource type="PackedScene" uid="uid://dwqs4eryby3s2" path="res://scenes/interface/inventory.tscn" id="2_k6j7i"]
+
+[node name="wagon" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="art" type="Sprite2D" parent="."]
+texture = ExtResource("1_yglft")
+
+[node name="inventory" parent="." instance=ExtResource("2_k6j7i")]
+layout_mode = 2
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = -82.0
+offset_top = -32.0
+offset_right = -82.0
+offset_bottom = -32.0
+columns = 10
+lines = 3
