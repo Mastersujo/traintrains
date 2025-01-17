@@ -1,0 +1,92 @@
+[gd_scene load_steps=4 format=3 uid="uid://ehnvbfn4ycns"]
+
+[ext_resource type="Texture2D" uid="uid://bg6ssjmnjewet" path="res://assets/interfaceMock.png" id="1_puo8s"]
+[ext_resource type="FontFile" uid="uid://c6nnyt1a76vpt" path="res://assets/fonts/DeterminationSansWebRegular-369X.ttf" id="2_otwe6"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_3f4ob"]
+line_spacing = -8.0
+font = ExtResource("2_otwe6")
+font_color = Color(0.0117647, 0.984314, 0.137255, 1)
+
+[node name="Interface mock" type="Sprite2D"]
+texture_filter = 1
+scale = Vector2(2, 2)
+texture = ExtResource("1_puo8s")
+centered = false
+
+[node name="Camera2D" type="Camera2D" parent="."]
+anchor_mode = 0
+
+[node name="Label" type="Label" parent="."]
+offset_left = 5.0
+offset_top = 12.0
+offset_right = 97.0
+offset_bottom = 29.0
+scale = Vector2(0.5, 0.5)
+text = "Item queue"
+label_settings = SubResource("LabelSettings_3f4ob")
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 12.0
+offset_top = 169.0
+offset_right = 64.0
+offset_bottom = 186.0
+scale = Vector2(0.5, 0.5)
+text = "Locaton:"
+label_settings = SubResource("LabelSettings_3f4ob")
+horizontal_alignment = 1
+
+[node name="Label3" type="Label" parent="."]
+offset_left = 273.0
+offset_top = 66.5
+offset_right = 325.0
+offset_bottom = 83.5
+scale = Vector2(0.5, 0.5)
+text = "Name: Coal"
+label_settings = SubResource("LabelSettings_3f4ob")
+horizontal_alignment = 1
+
+[node name="Label4" type="Label" parent="."]
+offset_left = 284.5
+offset_top = 87.0
+offset_right = 348.5
+offset_bottom = 113.0
+scale = Vector2(0.5, 0.5)
+text = "Fuels the train
+"
+label_settings = SubResource("LabelSettings_3f4ob")
+autowrap_mode = 2
+
+[node name="Label5" type="Label" parent="."]
+offset_left = 285.0
+offset_top = 100.5
+offset_right = 349.0
+offset_bottom = 126.5
+scale = Vector2(0.5, 0.5)
+text = "Fuels the train
+"
+label_settings = SubResource("LabelSettings_3f4ob")
+autowrap_mode = 2
+
+[node name="Label6" type="Label" parent="."]
+offset_left = 284.5
+offset_top = 115.5
+offset_right = 348.5
+offset_bottom = 141.5
+scale = Vector2(0.5, 0.5)
+text = "Fuels the train
+"
+label_settings = SubResource("LabelSettings_3f4ob")
+autowrap_mode = 2
+
+[node name="Label7" type="Label" parent="."]
+offset_left = 284.5
+offset_top = 129.5
+offset_right = 348.5
+offset_bottom = 155.5
+scale = Vector2(0.5, 0.5)
+text = "Fuels the train
+"
+label_settings = SubResource("LabelSettings_3f4ob")
+autowrap_mode = 2
