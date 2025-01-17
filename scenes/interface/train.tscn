@@ -11,6 +11,3 @@ theme_override_constants/separation = 218
 
 [node name="wagon" parent="wagons" instance=ExtResource("1_unww3")]
 layout_mode = 2
-
-[node name="wagon2" parent="wagons" instance=ExtResource("1_unww3")]
-layout_mode = 2

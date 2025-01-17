@@ -1,6 +1,6 @@
-[gd_resource type="Theme" load_steps=7 format=3 uid="uid://bbnn2xc48q5cd"]
+[gd_resource type="Theme" load_steps=8 format=3 uid="uid://bbnn2xc48q5cd"]
 
-[ext_resource type="Texture2D" uid="uid://cf6y1ra06vqkh" path="res://assets/interface/empty_slot.png" id="1_a4huf"]
+[ext_resource type="FontFile" uid="uid://b8rvvmwta4tdd" path="res://assets/item_icons.bmp" id="1_ndsto"]
 [ext_resource type="StyleBox" uid="uid://wkkrglfdd8n6" path="res://resources/inventory_slot.tres" id="2_2h6qa"]
 [ext_resource type="Texture2D" uid="uid://ds7urgmkyg8cw" path="res://assets/interface/hovered_slot.png" id="2_dpwnr"]
 [ext_resource type="Texture2D" uid="uid://doxvtoxuxsr22" path="res://assets/interface/selected_slot.png" id="2_rekvk"]
@@ -13,9 +13,13 @@ region_rect = Rect2(0, 0, 16, 16)
 texture = ExtResource("2_dpwnr")
 region_rect = Rect2(0, 0, 16, 16)
 
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_6mbwj"]
+texture = ExtResource("2_dpwnr")
+region_rect = Rect2(0, 0, 16, 16)
+
 [resource]
-Button/icons/icon = ExtResource("1_a4huf")
+Button/fonts/font = ExtResource("1_ndsto")
 Button/styles/focus = SubResource("StyleBoxTexture_od5tw")
 Button/styles/hover = SubResource("StyleBoxTexture_px735")
 Button/styles/normal = ExtResource("2_2h6qa")
-Button/styles/pressed = ExtResource("2_2h6qa")
+Button/styles/pressed = SubResource("StyleBoxTexture_6mbwj")

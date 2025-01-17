@@ -13,6 +13,7 @@ grow_vertical = 2
 script = ExtResource("1_2wdkx")
 
 [node name="item_queue" type="GridContainer" parent="."]
+layout_mode = 0
 theme = ExtResource("2_vc1he")
 theme_override_constants/h_separation = 0
 theme_override_constants/v_separation = 0

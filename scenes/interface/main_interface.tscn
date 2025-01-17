@@ -1,6 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://dj8ck5s7unbvi"]
+[gd_scene load_steps=7 format=3 uid="uid://dj8ck5s7unbvi"]
 
 [ext_resource type="PackedScene" uid="uid://b2avtkuair5ft" path="res://scenes/interface/train.tscn" id="1_n6n5d"]
+[ext_resource type="Script" path="res://script/main_interface.gd" id="1_ohl05"]
 [ext_resource type="Texture2D" uid="uid://b4x808hklkips" path="res://assets/blackground.png" id="1_xb5e3"]
 [ext_resource type="PackedScene" uid="uid://blxg5buvixy7t" path="res://scenes/interface/left_screen.tscn" id="2_nbiha"]
 [ext_resource type="Texture2D" uid="uid://p0gjupn2fgho" path="res://assets/vignete.png" id="3_f17hq"]
@@ -15,6 +16,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(2, 2)
+script = ExtResource("1_ohl05")
 
 [node name="blackground" type="Sprite2D" parent="."]
 texture = ExtResource("1_xb5e3")
